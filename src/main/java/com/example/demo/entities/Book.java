@@ -1,6 +1,6 @@
 package com.example.demo.entities;
 
-import pl.coderslab.dto.BookDto;
+import com.example.demo.dto.BookDto;
 
 import javax.persistence.*;
 import javax.validation.constraints.Max;

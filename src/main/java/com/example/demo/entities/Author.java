@@ -1,11 +1,9 @@
 package com.example.demo.entities;
 
-package pl.coderslab.entities;
 
+import com.example.demo.dto.AuthorDto;
 import org.hibernate.validator.constraints.pl.PESEL;
 import org.hibernate.validator.constraints.pl.REGON;
-import pl.coderslab.dto.AuthorDto;
-import pl.coderslab.validation.Age;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -37,7 +35,6 @@ public class Author {
     private String regon;
 
 
-    @Age(min = 18)
     private LocalDate yearOfBirth;
 
     @ManyToMany(mappedBy = "authors", fetch = FetchType.EAGER)

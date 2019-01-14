@@ -1,8 +1,8 @@
 package com.example.demo.entities;
 
+import com.example.demo.dto.PublisherDto;
 import org.hibernate.validator.constraints.pl.NIP;
 import org.hibernate.validator.constraints.pl.REGON;
-import pl.coderslab.dto.PublisherDto;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
